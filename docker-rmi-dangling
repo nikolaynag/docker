@@ -1,0 +1,6 @@
+#!/bin/bash
+IMAGES="$(docker images -f dangling=true -q)"
+if test -n "$IMAGES"
+then
+    docker rmi $IMAGES
+fi
