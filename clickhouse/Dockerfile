@@ -26,4 +26,4 @@ EXPOSE 9000 8123 9009
 
 ENV CLICKHOUSE_CONFIG /etc/clickhouse-server/config.xml
 
-CMD ["/usr/bin/clickhouse-server", "--config=${CLICKHOUSE_CONFIG}"]
+CMD /usr/bin/clickhouse-server --config=${CLICKHOUSE_CONFIG}
